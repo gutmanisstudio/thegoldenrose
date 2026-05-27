@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="hero-kb__bg kb">
             <Image
               className="kb__img"
-              src="/img/pink-bouquet-candle.jpg"
+              src="/img/noir-roses.jpg"
               alt=""
               fill
               priority
@@ -113,7 +113,7 @@ export default function HomePage() {
 
       {/* BREAK */}
       <section className="break">
-        <Image className="break__img" src="/img/bw-bride-calla.jpg" alt="" fill sizes="100vw" />
+        <Image className="break__img" src="/img/bride-tulips-ring.jpg" alt="" fill sizes="100vw" />
         <div className="break__overlay" />
         <div className="break__band" />
         <div className="break__hairline" />

@@ -6,6 +6,7 @@ import Nav from "@/components/Nav";
 import NavSheet from "@/components/NavSheet";
 import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
+import ChatWidget from "@/components/ChatWidget";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <main>{children}</main>
             <Footer />
             <CartDrawer />
+            <ChatWidget />
           </CartProvider>
         </UIProvider>
       </body>

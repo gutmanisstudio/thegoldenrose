@@ -13,6 +13,15 @@ export default function ProductCard({ p }: { p: Product }) {
           fill
           sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
         />
+        {p.imageHover && (
+          <Image
+            className="hover"
+            src={p.imageHover}
+            alt=""
+            fill
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+          />
+        )}
         {p.tag && <span className="pcard__tag">{p.tag}</span>}
         <div className="pcard__quick">
           <button type="button" tabIndex={-1}>Apskatīt</button>
