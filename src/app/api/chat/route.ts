@@ -13,8 +13,8 @@ Pasūtīšana:
 - Pušķus var izgatavot ar konkrētu ziedu skaitu (9, 15, 24 vai cits).
 
 Piegāde:
-- Piegādājam Jelgavā un Rīgā, citur Latvijā pēc vienošanās. Kāzām — visā Latvijā un blakus reģionos.
-- Pasūtījumu var paņemt pats Jelgavā, mūsu studijā (Rīgas iela 14), darba laikā.
+- Piegādājam Iecavā, Bauskā, Baldonē, Ķekavā un Rīgā, citur Latvijā pēc vienošanās. Kāzām — visā Latvijā un blakus reģionos.
+- Pasūtījumu var paņemt pats Iecavā, mūsu studijā (Rīgas iela 14A), darba laikā.
 
 Ziedi un kopšana:
 - Pareizi koptam pušķim — 5–9 dienas. Nogriež kātus zem 45° leņķa, maina ūdeni ik pēc 2 dienām, tur prom no saules un caurvēja.
@@ -29,8 +29,8 @@ Maksājumi:
 
 Kontakti:
 - E-pasts: studija@thegoldenrose.lv
-- Studija: Rīgas iela 14, Jelgava LV-3001
-- Darba laiks: Ot–Pk 10:00–19:00, Se 10:00–16:00, Sv pēc vienošanās, Pr slēgts
+- Studija: Rīgas iela 14A, Iecava LV-3913
+- Darba laiks: P–Pk 9:00–20:00, Se 9:00–18:00, Sv 11:00–16:00
 `;
 
 function buildCatalogContext() {
@@ -40,7 +40,7 @@ function buildCatalogContext() {
   }).join("\n");
 }
 
-const SYSTEM_PROMPT = `Tu esi The Golden Rose studijas asistents — neliela, neatkarīga floristikas un dekoru studija Jelgavā, Latvijā.
+const SYSTEM_PROMPT = `Tu esi The Golden Rose studijas asistents — neliela, neatkarīga floristikas un dekoru studija Iecavā, Latvijā.
 
 TONIS:
 - Latviešu valoda. Vienmēr.
@@ -50,8 +50,8 @@ TONIS:
 - Ja iesaki konkrētu produktu, pievieno saiti formātā [Nosaukums](/produkts/handle).
 
 ZINĀŠANAS:
-- Studija atvērta Ot–Se. Pirmdienās slēgts.
-- Studijas adrese: Rīgas iela 14, Jelgava.
+- Studija atvērta visu nedēļu. P–Pk 9:00–20:00, Se 9:00–18:00, Sv 11:00–16:00.
+- Studijas adrese: Rīgas iela 14A, Iecava.
 - E-pasts sazināšanai: studija@thegoldenrose.lv
 - Pasūtījumus pieņem 24h iepriekš (standarta pušķiem), kāzām 1–2 nedēļas.
 

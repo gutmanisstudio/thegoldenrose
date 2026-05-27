@@ -10,7 +10,7 @@ const VALUES = [
 ];
 
 const TIMELINE = [
-  { year: "2022", name: "Sākums", body: "Pirmais pušķis pārdots otrai sievai svētdienas rītā. Tā gada ietvaros mēs piegādājām 200+ pušķus tikai Jelgavā." },
+  { year: "2022", name: "Sākums", body: "Pirmais pušķis pārdots otrai sievai svētdienas rītā. Tā gada ietvaros mēs piegādājām 200+ pušķus tikai Iecavā." },
   { year: "2023", name: "Studija", body: "Atvērta studija Rīgas ielā 14 — pirmā fiziska adrese, kur klienti var atnākt, smaržot un izvēlēties." },
   { year: "2024", name: "Kāzu dekorēšana", body: "Pirmā pilnā kāzu dekorēšana — no līgavas pušķa līdz arkai. Šobrīd dekorējam 40+ kāzas sezonā." },
   { year: "2025", name: "Abonementi", body: "Pirmais ziedu abonements — XS, S, M izmēri. Pušķi pie tevis katru nedēļu." },
@@ -32,7 +32,7 @@ export default function AboutPage() {
             Mēs sākām, jo gribējām, lai pušķis būtu vairāk kā tikai dāvana.
           </p>
           <div className="ab-hero__body" data-reveal>
-            <p>The Golden Rose ir ziedu studija, dzimusi Jelgavā 2022. gadā. Sākumā tas bija mazs galds aiz veikala, dažas vāzes un ļoti daudz roses.</p>
+            <p>The Golden Rose ir ziedu studija, dzimusi Iecavā 2022. gadā. Sākumā tas bija mazs galds aiz veikala, dažas vāzes un ļoti daudz roses.</p>
             <p>Tagad mēs strādājam ar pilnu studiju, dekorējam kāzas visā Latvijā un piegādājam pušķus, kas paliek atmiņā ilgāk par to, cik ilgi ziedi paliek vāzē.</p>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function AboutPage() {
       <section className="ab-gallery">
         <h2 data-reveal>Studija <em>—</em><br />kur ziedi tiek<br />radīti.</h2>
         <p className="ab-gallery__lead" data-reveal>
-          Rīgas iela 14, Jelgava. Mūsu mājas ir maza, mierīga telpa, kur smaržo pēc eikalipta un Earl Grey tējas. Apciemot vari katru darba dienu.
+          Rīgas iela 14A, Iecava. Mūsu mājas ir maza, mierīga telpa, kur smaržo pēc eikalipta un Earl Grey tējas. Apciemot vari katru darba dienu.
         </p>
         <div className="ab-gallery__grid">
           <div data-reveal><Image src="/img/venue-interior.jpg" alt="" fill sizes="60vw" /></div>

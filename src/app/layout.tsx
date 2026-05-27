@@ -10,12 +10,12 @@ import ChatWidget from "@/components/ChatWidget";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "The Golden Rose — Floristikas un dekoru studija Jelgavā",
+  title: "The Golden Rose — Floristikas un dekoru studija Iecavā",
   description:
-    "Editorial florists & event decoration in Jelgava, Latvia. Pušķi, kāzas, telpu noformējumi.",
+    "Editorial florists & event decoration in Iecava, Latvia. Pušķi, kāzas, telpu noformējumi.",
   openGraph: {
     title: "The Golden Rose",
-    description: "Floristikas un dekoru studija Jelgavā",
+    description: "Floristikas un dekoru studija Iecavā",
     type: "website",
   },
 };

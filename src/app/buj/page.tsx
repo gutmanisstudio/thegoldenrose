@@ -16,10 +16,10 @@ const TAGS: { id: Tag; label: string }[] = [
 
 const FAQS: { q: string; a: string; tag: Exclude<Tag, "all"> }[] = [
   { tag: "pasut", q: "Kā varu <em>pasūtīt</em> pušķi?", a: "Pasūtījumu vari atstāt mūsu vietnē, sūtot ziņu uz +371 27 772 200 vai vienkārši piezvanot. Mēs sazināsimies dažu minūšu laikā, lai apstiprinātu detaļas." },
-  { tag: "pasut", q: "Vai varu pasūtīt pušķi <em>šodien</em>?", a: "Jā — ja pasūti līdz 16:00, mēs piegādājam vēl tajā pašā dienā Jelgavā un Rīgā. Visā Latvijā piegāde ir nākamajā darba dienā." },
+  { tag: "pasut", q: "Vai varu pasūtīt pušķi <em>šodien</em>?", a: "Jā — ja pasūti līdz 16:00, mēs piegādājam vēl tajā pašā dienā Iecavā, Bauskā, Baldonē, Ķekavā un Rīgā. Visā Latvijā piegāde ir nākamajā darba dienā." },
   { tag: "pasut", q: "Vai varu pasūtīt pēc <em>foto</em>?", a: "Jā, sūti foto WhatsApp uz +371 27 772 200 — pēc tā veidosim līdzīgu pušķi atbilstoši sezonas ziediem. Pilnīgi vienāds nebūs (jo katrs zieds ir unikāls), bet sajūta būs tā pati." },
-  { tag: "piegade", q: "Kur jūs <em>piegādājat</em>?", a: "Jelgavā un Rīgā — tajā pašā dienā. Latvijā ārpus Rīgas un Jelgavas — nākamajā darba dienā ar kurjeru." },
-  { tag: "piegade", q: "Cik <em>maksā</em> piegāde?", a: "Jelgavā — 4 EUR, Rīgā — 8 EUR, Latvijā — atkarīgs no adreses, vidēji 9–15 EUR. Pasūtījumiem virs 100 EUR piegāde Jelgavā ir bez maksas." },
+  { tag: "piegade", q: "Kur jūs <em>piegādājat</em>?", a: "Iecavā, Bauskā, Baldonē, Ķekavā un Rīgā — tajā pašā dienā. Citur Latvijā — nākamajā darba dienā ar kurjeru." },
+  { tag: "piegade", q: "Cik <em>maksā</em> piegāde?", a: "Iecavā — 4 EUR, Bauskā/Baldonē/Ķekavā — 6 EUR, Rīgā — 8 EUR, citur Latvijā — atkarīgs no adreses, vidēji 9–15 EUR. Pasūtījumiem virs 100 EUR piegāde Iecavā ir bez maksas." },
   { tag: "piegade", q: "Vai varat piegādāt <em>anonīmi</em>?", a: "Protams. Mēs neminām sūtītāja vārdu un pievienojam tikai to ziņu, ko tu mums atstāj." },
   { tag: "zidi", q: "Cik ilgi pušķis <em>noturas</em>?", a: "Pareizi kopjot — 7 līdz 12 dienas. Pirms ielikšanas vāzē nogriez stiebrus 45° leņķī, maini ūdeni katru dienu un turi prom no taisnās saules un caurvēja." },
   { tag: "zidi", q: "Vai varu izvēlēties <em>krāsu</em>?", a: "Jā. Pasūtījuma piezīmēs vari norādīt vēlamo krāsu paleti — mēs strādājam ar to, kas svaigi pieejams sezonā, un saskaņojam ar tevi pirms veidošanas." },

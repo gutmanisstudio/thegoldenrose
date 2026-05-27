@@ -55,7 +55,7 @@ export default function NavSheet() {
       <div className="nav-sheet__foot">
         <div>
           <span className="nav-sheet__foot-l">Studija</span>
-          <span className="nav-sheet__foot-v">Rīgas iela 14, Jelgava</span>
+          <span className="nav-sheet__foot-v">Rīgas iela 14A, Iecava</span>
         </div>
         <div>
           <span className="nav-sheet__foot-l">E-pasts</span>

@@ -22,13 +22,13 @@ export default function HomePage() {
               <span className="ln"><span>The Golden</span></span>
               <span className="ln"><span>Rose</span></span>
             </h1>
-            <p className="hero-kb__eye" data-reveal>Ziedu studija · Jelgava</p>
+            <p className="hero-kb__eye" data-reveal>Ziedu studija · Iecava</p>
             <div className="hero-kb__cta" data-reveal>
               <Link href="/veikals" className="btn">Iepirkties <span className="arr">→</span></Link>
             </div>
             <p className="hero-kb__addr" data-reveal>
               <span>Ziedi ar sajūtu, ne tikai izskatu</span>
-              <span>Rīgas iela 14 · Jelgava</span>
+              <span>Rīgas iela 14A · Iecava</span>
               <span>+371 27 772 200</span>
             </p>
           </div>
@@ -109,7 +109,7 @@ export default function HomePage() {
           <article className="intro__col" data-reveal>
             <span className="intro__col__n">iii. — Šodien</span>
             <h3 className="intro__col__h">Piegāde tajā pašā dienā.</h3>
-            <p className="intro__col__b">Jelgavā un Rīgā — līdz 16:00 pasūti, līdz 20:00 saņem.</p>
+            <p className="intro__col__b">Iecavā, Bauskā, Baldonē, Ķekavā un Rīgā — līdz 16:00 pasūti, līdz 20:00 saņem.</p>
           </article>
         </div>
       </section>
@@ -229,7 +229,7 @@ export default function HomePage() {
             ["i.", "Saruna", "Pastāsti, kam pušķis. Mēs jautājam pareizos jautājumus — krāsa, sajūta, vārds, kuru gribi pateikt.", "5 min"],
             ["ii.", "Skice", "Pirms zieda mēs uzmetam paletes un kompozīcijas variantu, kas atbilst tavai vīzijai.", "Tajā dienā"],
             ["iii.", "Ziedi", "Strādājam tikai ar svaigiem ziediem no pārbaudītiem audzētājiem. Katrs pušķis dzimst rokās, ne pēc šablona.", "2 – 4 h"],
-            ["iv.", "Piegāde", "Mēs piegādājam Jelgavā un Rīgā tajā pašā dienā, visā Latvijā — nākamajā darba dienā.", "Šodien"],
+            ["iv.", "Piegāde", "Mēs piegādājam Iecavā, Bauskā, Baldonē, Ķekavā un Rīgā tajā pašā dienā, citur Latvijā — nākamajā darba dienā.", "Šodien"],
           ].map(([n, name, body, time]) => (
             <div key={n} className="process__row" data-reveal>
               <span className="process__step">{n}</span>

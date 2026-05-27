@@ -23,7 +23,7 @@ export default function Footer() {
         <div>
           <h4>Studija</h4>
           <ul>
-            <li>Rīgas iela 14, Jelgava</li>
+            <li>Rīgas iela 14A, Iecava</li>
             <li>P–PT 9–20 · S 9–18 · Sv 11–16</li>
             <li><a href="tel:+37127772200">+371 27 772 200</a></li>
             <li><a href="mailto:studija@thegoldenrose.lv">studija@thegoldenrose.lv</a></li>
@@ -42,7 +42,7 @@ export default function Footer() {
 
       <div className="foot__bot">
         <p>© {new Date().getFullYear()} The Golden Rose</p>
-        <p>Veidots ar mīlestību Jelgavā</p>
+        <p>Veidots ar mīlestību Iecavā</p>
       </div>
     </footer>
   );

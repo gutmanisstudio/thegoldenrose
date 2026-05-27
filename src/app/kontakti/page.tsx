@@ -134,7 +134,7 @@ export default function ContactPage() {
           </div>
           <div className="ct-info__block" data-reveal>
             <div className="ct-info__h">— Adrese —</div>
-            <div className="ct-info__v">Rīgas iela 14,<br />Jelgava</div>
+            <div className="ct-info__v">Rīgas iela 14A,<br />Iecava</div>
             <p className="ct-info__sub">Pirmais stāvs, ieeja no ielas.</p>
           </div>
         </aside>
@@ -145,14 +145,14 @@ export default function ContactPage() {
           <iframe
             className="ct-map__img"
             title="Karte"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=23.715%2C56.648%2C23.745%2C56.660&layer=mapnik"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=24.180%2C56.590%2C24.210%2C56.610&layer=mapnik&marker=56.5993%2C24.1953"
             loading="lazy"
             style={{ border: 0 }}
           />
           <div className="ct-map__overlay" />
           <div className="ct-map__card" data-reveal>
             <h3>Studija</h3>
-            <p>Rīgas iela 14, Jelgava. Apciemot vari katru darba dienu — atvērti no 9:00 līdz 20:00.</p>
+            <p>Rīgas iela 14A, Iecava. Apciemot vari katru darba dienu — atvērti no 9:00 līdz 20:00.</p>
             <span className="meta" style={{ color: "var(--accent)" }}>Atvērts šobrīd</span>
             <span className="meta" style={{ color: "var(--fg-soft)" }}>P–PT · 9:00–20:00</span>
           </div>

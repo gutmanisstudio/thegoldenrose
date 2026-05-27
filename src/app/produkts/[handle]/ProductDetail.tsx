@@ -161,7 +161,7 @@ export default function ProductDetail({
 
           <div className="pd__notes">
             <div className="pd__note">
-              <span className="pd__note__l">Piegāde · Jelgava un Rīga</span>
+              <span className="pd__note__l">Piegāde · Iecava un apkaime</span>
               <span className="pd__note__v">Šodien no 11:00</span>
             </div>
             <div className="pd__note">
