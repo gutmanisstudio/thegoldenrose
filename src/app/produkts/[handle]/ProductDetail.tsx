@@ -70,8 +70,8 @@ export default function ProductDetail({
             ))}
           </div>
           <div className="pd__main">
+            <span className="badge">Sezona MMXXVI</span>
             <Image src={activeImg} alt={product.title} fill priority sizes="(min-width:1024px) 50vw, 100vw" />
-            {product.tag && <span className="badge">{product.tag}</span>}
           </div>
         </div>
 
@@ -85,7 +85,7 @@ export default function ProductDetail({
               <span className="pd__price__cur">EUR</span>
               {(unitPrice / 100).toFixed(2).replace(".", ",")}
             </p>
-            <span className="pd__stock">Pieejams</span>
+            <span className="pd__stock">Pieejams · šodien</span>
           </div>
 
           <div className="pd__opts">
@@ -161,12 +161,20 @@ export default function ProductDetail({
 
           <div className="pd__notes">
             <div className="pd__note">
-              <span className="pd__note__l">Piegāde</span>
-              <span className="pd__note__v">Jelgava un Rīga · šodien</span>
+              <span className="pd__note__l">Piegāde · Jelgava un Rīga</span>
+              <span className="pd__note__v">Šodien no 11:00</span>
             </div>
             <div className="pd__note">
-              <span className="pd__note__l">Pasūtījums</span>
-              <span className="pd__note__v">24h iepriekš</span>
+              <span className="pd__note__l">Piegāde · Visa Latvija</span>
+              <span className="pd__note__v">1–2 darba dienas</span>
+            </div>
+            <div className="pd__note">
+              <span className="pd__note__l">Pasūtījumi</span>
+              <span className="pd__note__v">+371 27 772 200</span>
+            </div>
+            <div className="pd__note">
+              <span className="pd__note__l">Svaigums</span>
+              <span className="pd__note__v">7+ dienas pareizi kopjot</span>
             </div>
           </div>
         </div>
@@ -205,7 +213,7 @@ export default function ProductDetail({
 
       {related.length > 0 && (
         <section className="pd__related">
-          <h2>Tev varētu <em>patikt</em></h2>
+          <h2>Var <em>arī</em> patikt</h2>
           <div className="pd__related__grid">
             {related.map((p) => <ProductCard key={p.handle} p={p} />)}
           </div>

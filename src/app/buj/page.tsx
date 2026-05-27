@@ -9,32 +9,32 @@ const TAGS: { id: Tag; label: string }[] = [
   { id: "all", label: "Visi" },
   { id: "pasut", label: "Pasūtīšana" },
   { id: "piegade", label: "Piegāde" },
-  { id: "zidi", label: "Ziedi & kopšana" },
-  { id: "kazas", label: "Kāzas" },
+  { id: "zidi", label: "Ziedi un sastāvs" },
+  { id: "kazas", label: "Kāzas un pasākumi" },
   { id: "maksaj", label: "Maksājumi" },
 ];
 
 const FAQS: { q: string; a: string; tag: Exclude<Tag, "all"> }[] = [
-  { tag: "pasut", q: "Cik ilgi iepriekš jāpasūta pušķis?", a: "Standarta pušķiem pietiek ar 24 stundām. Lielāki projekti, kāzas un retas šķirnes — 1–2 nedēļas iepriekš." },
-  { tag: "pasut", q: "Vai varu pasūtīt ar īpašu krāsu paleti?", a: "Jā, gandrīz vienmēr. Sarunā vienojamies par paleti un alternatīvām, ja kāds zieds nav pieejams." },
-  { tag: "pasut", q: "Vai izgatavojat pušķus ar konkrēta ziedu skaitu?", a: "Jā — 9, 15, 24 vai cits skaits. Tikai ņem vērā, ka skaitam jābūt loģiskam zieda izmēram." },
-  { tag: "piegade", q: "Vai piegādājat?", a: "Jelgavā un Rīgā — jā. Citur Latvijā pēc vienošanās. Sūtīšanas izmaksas aprēķinam kasē." },
-  { tag: "piegade", q: "Cik tālu piegādājat kāzām?", a: "Visā Latvijā un blakus reģionos (Lietuva, Igaunija) ar uzstādīšanu uz vietas." },
-  { tag: "piegade", q: "Vai varu paņemt pasūtījumu pats?", a: "Jā — Jelgavā, mūsu studijā, darba laikā vai pēc vienošanās." },
-  { tag: "zidi", q: "Cik ilgi pušķis nezaudē izskatu?", a: "Pareizi koptam pušķim — 5–9 dienas. Atkarīgs no šķirnēm un istabas temperatūras." },
-  { tag: "zidi", q: "Kā pareizi kopt pušķi?", a: "Nogriez kātus zem 45° leņķa, maini ūdeni ik pēc 2 dienām, tur prom no saules un caurvēja." },
-  { tag: "zidi", q: "Vai izmantojat ekoloģiskus materiālus?", a: "Pārsvarā jā — papīrs, audumi, lentes. Putuplastu un mākslīgo masu izmantojam tikai kad konstrukcija to prasa." },
-  { tag: "kazas", q: "Kā notiek kāzu sadarbība?", a: "Sākam ar sarunu, tad veidojam skici un tāmi. Pēc apstiprinājuma seko detalizēts plāns un izstrāde." },
-  { tag: "kazas", q: "Vai jāmaksā avanss?", a: "Jā — 30% no kopējās summas. Atlikušais — 7 dienas pirms pasākuma." },
-  { tag: "kazas", q: "Vai veidojat arī kāzu mēģinājumu (mock-up)?", a: "Jā, pēc vienošanās. Mēģinājums iekļauj galda kompozīciju vai mazo līgavas pušķi." },
-  { tag: "maksaj", q: "Kā varu samaksāt?", a: "Bankas pārskaitījums, karte studijā vai online. Lielākiem projektiem — rēķins ar atliktu termiņu." },
-  { tag: "maksaj", q: "Vai izrakstāt rēķinu uzņēmumam?", a: "Jā, ar visu PVN un detaļām. Atsūti rekvizītus, izrakstīsim." },
-  { tag: "maksaj", q: "Atgriešanas un atcelšanas politika?", a: "Standarta pušķiem — atcelšana līdz 24 h pirms. Kāzu projektiem — saskaņā ar individuālo līgumu." },
+  { tag: "pasut", q: "Kā varu <em>pasūtīt</em> pušķi?", a: "Pasūtījumu vari atstāt mūsu vietnē, sūtot ziņu uz +371 27 772 200 vai vienkārši piezvanot. Mēs sazināsimies dažu minūšu laikā, lai apstiprinātu detaļas." },
+  { tag: "pasut", q: "Vai varu pasūtīt pušķi <em>šodien</em>?", a: "Jā — ja pasūti līdz 16:00, mēs piegādājam vēl tajā pašā dienā Jelgavā un Rīgā. Visā Latvijā piegāde ir nākamajā darba dienā." },
+  { tag: "pasut", q: "Vai varu pasūtīt pēc <em>foto</em>?", a: "Jā, sūti foto WhatsApp uz +371 27 772 200 — pēc tā veidosim līdzīgu pušķi atbilstoši sezonas ziediem. Pilnīgi vienāds nebūs (jo katrs zieds ir unikāls), bet sajūta būs tā pati." },
+  { tag: "piegade", q: "Kur jūs <em>piegādājat</em>?", a: "Jelgavā un Rīgā — tajā pašā dienā. Latvijā ārpus Rīgas un Jelgavas — nākamajā darba dienā ar kurjeru." },
+  { tag: "piegade", q: "Cik <em>maksā</em> piegāde?", a: "Jelgavā — 4 EUR, Rīgā — 8 EUR, Latvijā — atkarīgs no adreses, vidēji 9–15 EUR. Pasūtījumiem virs 100 EUR piegāde Jelgavā ir bez maksas." },
+  { tag: "piegade", q: "Vai varat piegādāt <em>anonīmi</em>?", a: "Protams. Mēs neminām sūtītāja vārdu un pievienojam tikai to ziņu, ko tu mums atstāj." },
+  { tag: "zidi", q: "Cik ilgi pušķis <em>noturas</em>?", a: "Pareizi kopjot — 7 līdz 12 dienas. Pirms ielikšanas vāzē nogriez stiebrus 45° leņķī, maini ūdeni katru dienu un turi prom no taisnās saules un caurvēja." },
+  { tag: "zidi", q: "Vai varu izvēlēties <em>krāsu</em>?", a: "Jā. Pasūtījuma piezīmēs vari norādīt vēlamo krāsu paleti — mēs strādājam ar to, kas svaigi pieejams sezonā, un saskaņojam ar tevi pirms veidošanas." },
+  { tag: "zidi", q: "Kādi ziedi ir <em>sezonā</em>?", a: "Šobrīd: rozes, hortenzijas, eikalipts, waxflower, tulpes. Sezonas izmaiņas notiek katras divas nedēļas — Instagram @thegoldenroseee mēs publicējam, kas tikko ienāca." },
+  { tag: "kazas", q: "Cik <em>iepriekš</em> jārezervē kāzu dekorēšana?", a: "Sezonas mēnešus (jūnijs–septembris) ieteicams rezervēt 4–6 mēnešus iepriekš. Citos laikos pietiek ar 1–2 mēnešiem. Konsultācija ir bezmaksas." },
+  { tag: "kazas", q: "Cik <em>maksā</em> kāzu dekorēšana?", a: "Atkarīgs no apjoma. Mazas kāzas (20–40 viesi) sākas no 600 EUR, pilnvērtīga dekorēšana lielām kāzām — 2000+ EUR. Konsultācijā mēs sagatavojam individuālu cenu paketē." },
+  { tag: "kazas", q: "Vai veidojat <em>līgavas</em> rokas pušķi?", a: "Jā — tas ir mūsu mīļākais darbs. Līgavas pušķis tiek veidots dienā pirms kāzām un piegādāts uz vietas no rīta. Cena no 95 EUR." },
+  { tag: "maksaj", q: "Kādi <em>maksājumu</em> veidi?", a: "Bankas pārskaitījums, karte (Visa, Mastercard, Maestro), Apple Pay, Google Pay un skaidra nauda studijā. Kāzu pasūtījumiem — 30% iemaksa rezervēšanai, atlikums nedēļu pirms." },
+  { tag: "maksaj", q: "Vai izrakstāt <em>rēķinu</em>?", a: "Jā, gan PVN rēķinu uzņēmumiem, gan parastu apliecinājumu privātpersonām. Sūti rekvizītus uz studija@thegoldenrose.lv." },
+  { tag: "pasut", q: "Ko darīt, ja saņēmējs nav <em>mājās</em>?", a: "Kurjers atstāj ziņu un sazinās ar saņēmēju. Ja neizdodas piegādāt — pušķis paliek mūsu studijā vēsumā un mēs vienojamies par jaunu laiku bez papildu maksas." },
 ];
 
 export default function FAQPage() {
   const [tag, setTag] = useState<Tag>("all");
-  const [openIdx, setOpenIdx] = useState<number | null>(0);
+  const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   const filtered = useMemo(
     () => (tag === "all" ? FAQS : FAQS.filter((f) => f.tag === tag)),
@@ -45,12 +45,11 @@ export default function FAQPage() {
     <>
       <section className="faq-hero">
         <div>
-          <p className="faq-hero__crumb"><Link href="/">Sākums</Link> / BUJ</p>
-          <h1 data-reveal>Atbildes, pirms tu pat <em>paspēj</em> jautāt.</h1>
+          <p className="faq-hero__crumb"><Link href="/">Sākums</Link> — Bieži uzdotie jautājumi</p>
+          <h1 data-reveal>Bieži<br /><em>uzdotie</em></h1>
         </div>
         <p className="faq-hero__lead" data-reveal>
-          Ja atbildi nesameklēji — uzraksti{" "}
-          <a href="mailto:studio@thegoldenrose.lv">studio@thegoldenrose.lv</a>.
+          Ja atbildes nav šeit, raksti vai zvani — atbildam tajā pašā dienā.
         </p>
       </section>
 
@@ -70,36 +69,41 @@ export default function FAQPage() {
         ))}
       </div>
 
-      <ul className="faq-list">
+      <section className="faq-list">
         {filtered.map((f, i) => {
           const open = openIdx === i;
           return (
-            <li
+            <div
               key={`${f.q}-${i}`}
               className={`faq-item ${open ? "open" : ""}`}
               onClick={() => setOpenIdx(open ? null : i)}
+              data-reveal
             >
               <div className="faq-q">
-                <span className="faq-num">0{i + 1}</span>
-                <h3 className="faq-h">{f.q}</h3>
-                <span className="faq-toggle" aria-hidden>+</span>
+                <span className="faq-num">{String(i + 1).padStart(2, "0")}</span>
+                <h3 className="faq-h" dangerouslySetInnerHTML={{ __html: f.q }} />
+                <span className="faq-toggle" aria-hidden>↓</span>
               </div>
               <div className="faq-a">
                 <div className="faq-a__inner">
                   <div className="faq-a__padding">
-                    <p className="faq-a__body">{f.a}</p>
+                    <div className="faq-a__body"><p>{f.a}</p></div>
                   </div>
                 </div>
               </div>
-            </li>
+            </div>
           );
         })}
-      </ul>
+      </section>
 
       <section className="faq-cta">
-        <h2>Jautājums, ko neuzdevām?</h2>
-        <p>Uzraksti — atbildam vienas darba dienas laikā.</p>
-        <Link href="/kontakti" className="btn">Sazināties <span className="arr">→</span></Link>
+        <span className="eyebrow">— Vēl jautājumi —</span>
+        <h2 style={{ marginTop: 16 }}>Nav šeit? <em>Pajautā.</em></h2>
+        <p>Mēs labāk piezvanām nekā rakstām desmit lapas BUJ. Zvani vai raksti — atbildam tajā pašā dienā.</p>
+        <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap" }}>
+          <a href="tel:+37127772200" className="btn">+371 27 772 200 <span className="arr">→</span></a>
+          <Link href="/kontakti" className="btn btn--ghost">Sūtīt ziņu</Link>
+        </div>
       </section>
     </>
   );

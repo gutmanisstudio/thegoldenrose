@@ -55,15 +55,15 @@ export default function NavSheet() {
       <div className="nav-sheet__foot">
         <div>
           <span className="nav-sheet__foot-l">Studija</span>
-          <span className="nav-sheet__foot-v">Jelgava, Latvija</span>
+          <span className="nav-sheet__foot-v">Rīgas iela 14, Jelgava</span>
         </div>
         <div>
           <span className="nav-sheet__foot-l">E-pasts</span>
-          <span className="nav-sheet__foot-v">studio@thegoldenrose.lv</span>
+          <span className="nav-sheet__foot-v">studija@thegoldenrose.lv</span>
         </div>
         <div>
           <span className="nav-sheet__foot-l">Telefons</span>
-          <span className="nav-sheet__foot-v">+371 2X XXX XXX</span>
+          <span className="nav-sheet__foot-v">+371 27 772 200</span>
         </div>
       </div>
     </div>

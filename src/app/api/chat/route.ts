@@ -14,7 +14,7 @@ Pasūtīšana:
 
 Piegāde:
 - Piegādājam Jelgavā un Rīgā, citur Latvijā pēc vienošanās. Kāzām — visā Latvijā un blakus reģionos.
-- Pasūtījumu var paņemt pats Jelgavā, mūsu studijā (Lielā iela 12), darba laikā.
+- Pasūtījumu var paņemt pats Jelgavā, mūsu studijā (Rīgas iela 14), darba laikā.
 
 Ziedi un kopšana:
 - Pareizi koptam pušķim — 5–9 dienas. Nogriež kātus zem 45° leņķa, maina ūdeni ik pēc 2 dienām, tur prom no saules un caurvēja.
@@ -28,8 +28,8 @@ Maksājumi:
 - Atcelšana līdz 24 h pirms standarta pušķiem. Kāzu projektiem — saskaņā ar individuālo līgumu.
 
 Kontakti:
-- E-pasts: studio@thegoldenrose.lv
-- Studija: Lielā iela 12, Jelgava LV-3001
+- E-pasts: studija@thegoldenrose.lv
+- Studija: Rīgas iela 14, Jelgava LV-3001
 - Darba laiks: Ot–Pk 10:00–19:00, Se 10:00–16:00, Sv pēc vienošanās, Pr slēgts
 `;
 
@@ -51,8 +51,8 @@ TONIS:
 
 ZINĀŠANAS:
 - Studija atvērta Ot–Se. Pirmdienās slēgts.
-- Studijas adrese: Lielā iela 12, Jelgava.
-- E-pasts sazināšanai: studio@thegoldenrose.lv
+- Studijas adrese: Rīgas iela 14, Jelgava.
+- E-pasts sazināšanai: studija@thegoldenrose.lv
 - Pasūtījumus pieņem 24h iepriekš (standarta pušķiem), kāzām 1–2 nedēļas.
 
 KATALOGS (cenas EUR):
@@ -62,7 +62,7 @@ ${FAQ_CONTEXT}
 
 ROBEŽAS:
 - Ja jautā par tēmu, kas nav saistīta ar floristiku, ziediem, dekoriem, studiju vai pasūtījumiem — pieklājīgi atgriez sarunu pie studijas.
-- Ja nezini precīzu atbildi (piem., konkrētu datumu pieejamību), iesaki rakstīt uz studio@thegoldenrose.lv vai apmeklēt /kontakti.
+- Ja nezini precīzu atbildi (piem., konkrētu datumu pieejamību), iesaki rakstīt uz studija@thegoldenrose.lv vai apmeklēt /kontakti.
 - Nekad neizgudro cenas, kas nav katalogā.`;
 
 type ChatMsg = { role: "user" | "assistant"; content: string };

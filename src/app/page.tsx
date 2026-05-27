@@ -1,11 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProductCard from "@/components/ProductCard";
-import { PRODUCTS } from "@/lib/products";
 
 export default function HomePage() {
-  const signature = PRODUCTS.slice(0, 4);
-
   return (
     <>
       {/* HERO — ken burns */}
@@ -22,18 +18,18 @@ export default function HomePage() {
             />
           </div>
           <div className="hero-kb__inner">
-            <p className="hero-kb__eye" data-reveal>The Golden Rose · Jelgava</p>
             <h1 className="hero-kb__title in" data-reveal>
-              <span className="ln"><span>Pušķi un dekori,</span></span>
-              <span className="ln"><span>stāstīti kā filma.</span></span>
+              <span className="ln"><span>The Golden</span></span>
+              <span className="ln"><span>Rose</span></span>
             </h1>
+            <p className="hero-kb__eye" data-reveal>Ziedu studija · Jelgava</p>
             <div className="hero-kb__cta" data-reveal>
-              <Link href="/veikals" className="btn">Apskatīt veikalu <span className="arr">→</span></Link>
-              <Link href="/kontakti" className="btn btn--ghost">Pieteikt kāzu projektu</Link>
+              <Link href="/veikals" className="btn">Iepirkties <span className="arr">→</span></Link>
             </div>
             <p className="hero-kb__addr" data-reveal>
-              <span>Lielā iela 12 · Jelgava</span>
-              <span>Otrdiena – Sestdiena</span>
+              <span>Ziedi ar sajūtu, ne tikai izskatu</span>
+              <span>Rīgas iela 14 · Jelgava</span>
+              <span>+371 27 772 200</span>
             </p>
           </div>
         </div>
@@ -42,9 +38,9 @@ export default function HomePage() {
       {/* COLLECTIONS */}
       <section className="collections">
         <header className="collections__head">
-          <h2 data-reveal>Trīs ceļi <em>caur</em> sezonu</h2>
+          <h2 data-reveal>Kolekcijas <em>—</em><br />trīs ceļi vienai sajūtai.</h2>
           <p className="collections__sub" data-reveal>
-            Pušķi, līgavu kompozīcijas un pilnos kāzu redzējumi — visi viena studija.
+            Katrai kompozīcijai savs raksturs un sava sezona.
           </p>
         </header>
 
@@ -52,10 +48,12 @@ export default function HomePage() {
           <Link href="/veikals?cat=puski" className="coll-card big" data-reveal>
             <Image src="/img/pink-purple-bouquet.jpg" alt="" fill sizes="(min-width:820px) 60vw, 100vw" />
             <div className="coll-card__inner">
-              <h3 className="coll-card__title">Pušķi</h3>
-              <div className="coll-card__meta">
-                <span>01 · Ikdienai un svinībām</span>
-                <span className="arr">→</span>
+              <div>
+                <h3 className="coll-card__title">Pušķi pēc<br />noskaņojuma</h3>
+                <div className="coll-card__meta">
+                  <span>14 kompozīcijas · no €35</span>
+                  <span className="arr">→</span>
+                </div>
               </div>
             </div>
           </Link>
@@ -63,21 +61,25 @@ export default function HomePage() {
           <Link href="/veikals?cat=ligavu" className="coll-card small1" data-reveal>
             <Image src="/img/bride-peony.jpg" alt="" fill sizes="(min-width:820px) 40vw, 100vw" />
             <div className="coll-card__inner">
-              <h3 className="coll-card__title">Līgavu pušķi</h3>
-              <div className="coll-card__meta">
-                <span>02</span>
-                <span className="arr">→</span>
+              <div>
+                <h3 className="coll-card__title">Līgavu pušķi</h3>
+                <div className="coll-card__meta">
+                  <span>Pēc pasūtījuma · no €95</span>
+                  <span className="arr">→</span>
+                </div>
               </div>
             </div>
           </Link>
 
-          <Link href="/veikals?cat=kazas" className="coll-card small2" data-reveal>
-            <Image src="/img/white-arch.jpg" alt="" fill sizes="(min-width:820px) 40vw, 100vw" />
+          <Link href="/veikals?cat=kastes" className="coll-card small2" data-reveal>
+            <Image src="/img/blue-hydrangea-box.jpg" alt="" fill sizes="(min-width:820px) 40vw, 100vw" />
             <div className="coll-card__inner">
-              <h3 className="coll-card__title">Kāzu dekors</h3>
-              <div className="coll-card__meta">
-                <span>03</span>
-                <span className="arr">→</span>
+              <div>
+                <h3 className="coll-card__title">Ziedu kastes</h3>
+                <div className="coll-card__meta">
+                  <span>8 kompozīcijas · no €55</span>
+                  <span className="arr">→</span>
+                </div>
               </div>
             </div>
           </Link>
@@ -87,26 +89,27 @@ export default function HomePage() {
       {/* INTRO */}
       <section className="intro">
         <div className="intro__head">
-          <span className="intro__marker" data-reveal>02 — Studija</span>
+          <span className="intro__marker" data-reveal>Studija · MMXXVI</span>
           <h2 className="intro__title" data-reveal>
-            Mēs nestādām pušķus — <em>mēs tos uzrakstām.</em>
+            Mēs neveidojam <em>pušķus</em>.<br />
+            Mēs veidojam brīžus.
           </h2>
         </div>
         <div className="intro__row">
           <article className="intro__col" data-reveal>
-            <span className="intro__col__n">i.</span>
-            <h3 className="intro__col__h">Editorialitāte</h3>
-            <p className="intro__col__b">Krāsas un kompozīcijas, kas darbojas arī kamerā.</p>
+            <span className="intro__col__n">i. — Sajūta</span>
+            <h3 className="intro__col__h">Katrs pušķis ir saruna.</h3>
+            <p className="intro__col__b">Pirms ziediem mēs uzdodam jautājumus — kāda sajūta, kam, kāpēc tagad.</p>
           </article>
           <article className="intro__col" data-reveal>
-            <span className="intro__col__n">ii.</span>
-            <h3 className="intro__col__h">Sezona</h3>
-            <p className="intro__col__b">Ziedi, kas ir īstajā laikā — ne agrāk, ne vēlāk.</p>
+            <span className="intro__col__n">ii. — Svaigi</span>
+            <h3 className="intro__col__h">No šīs nedēļas.</h3>
+            <p className="intro__col__b">Strādājam tikai ar tādiem ziediem, kas studijā ienākuši pēdējās 48 stundās.</p>
           </article>
           <article className="intro__col" data-reveal>
-            <span className="intro__col__n">iii.</span>
-            <h3 className="intro__col__h">Rūpība</h3>
-            <p className="intro__col__b">Roku darbs, mērīts ar minūtēm un loka līniju.</p>
+            <span className="intro__col__n">iii. — Šodien</span>
+            <h3 className="intro__col__h">Piegāde tajā pašā dienā.</h3>
+            <p className="intro__col__b">Jelgavā un Rīgā — līdz 16:00 pasūti, līdz 20:00 saņem.</p>
           </article>
         </div>
       </section>
@@ -117,29 +120,76 @@ export default function HomePage() {
         <div className="break__overlay" />
         <div className="break__band" />
         <div className="break__hairline" />
-        <span className="break__index">03</span>
+        <span className="break__index" aria-hidden="true">04</span>
         <div className="break__content">
-          <span className="break__eye" data-reveal>Aiz kadra</span>
-          <h2 className="break__title" data-reveal>Florists ir režisors.</h2>
+          <span className="break__eye" data-reveal><span>Kāzu studijai</span></span>
+          <h2 className="break__title" data-reveal>
+            No zieda uz ziedu,<br />no <em>sirds</em> uz sirdi.
+          </h2>
           <p className="break__sub" data-reveal>
-            Viņš nezīmē kadru — viņš to ļauj notikt. Mūsu darbs ir radīt
-            apstākļus, kur ziedi pasaka stāstu paši.
+            Mēs dekorējam tavu īpašāko dienu — no līgavas rokas pušķa līdz katrai svecei uz galda.
           </p>
-          <Link href="/par-mums" className="break__cta">Par studiju</Link>
+          <Link href="/par-mums" className="break__cta" data-reveal>Lasīt vairāk</Link>
+        </div>
+        <div className="break__line">
+          <span>Foto · MMXXV sezona</span>
+          <span>The Golden Rose dekorēšana</span>
         </div>
       </section>
 
       {/* SIGNATURE */}
       <section className="signature">
         <header className="signature__head">
-          <h2 className="signature__title" data-reveal>Parakstu <em>pušķi</em></h2>
+          <h2 className="signature__title" data-reveal>
+            Mūsu <em>parakstu</em><br />pušķi
+          </h2>
           <p className="signature__desc" data-reveal>
-            Mūsu pastāvīgā kolekcija — gatava aiziet šovakar. Visus pārējos
-            radām pēc tavas sarunas.
+            Katru nedēļu mēs veidojam četrus īpašos pušķus — tie ir mūsu paraksti, kas dzimst no tā, kas tikko ienācis studijā.
           </p>
         </header>
         <div className="signature__rail">
-          {signature.map((p) => <ProductCard key={p.handle} p={p} />)}
+          <Link href="/produkts/rosa-blush" className="pcard" data-reveal>
+            <div className="pcard__media">
+              <span className="pcard__tag">Jauns</span>
+              <Image src="/img/pink-bouquet-candle.jpg" alt="" fill sizes="25vw" />
+            </div>
+            <div className="pcard__row">
+              <span className="pcard__name">Rosa <em>blush</em></span>
+              <span className="pcard__price">EUR 48,00</span>
+            </div>
+            <span className="pcard__meta">N°01 · Maigs</span>
+          </Link>
+          <Link href="/produkts/hydrangea-bleu" className="pcard" data-reveal>
+            <div className="pcard__media">
+              <Image src="/img/blue-hydrangea-box.jpg" alt="" fill sizes="25vw" />
+            </div>
+            <div className="pcard__row">
+              <span className="pcard__name">Hydrangea <em>bleu</em></span>
+              <span className="pcard__price">EUR 62,00</span>
+            </div>
+            <span className="pcard__meta">N°02 · Klusums</span>
+          </Link>
+          <Link href="/produkts/fuchsia-noir" className="pcard" data-reveal>
+            <div className="pcard__media">
+              <span className="pcard__tag">Limited</span>
+              <Image src="/img/pink-purple-bouquet.jpg" alt="" fill sizes="25vw" />
+            </div>
+            <div className="pcard__row">
+              <span className="pcard__name">Fuchsia <em>noir</em></span>
+              <span className="pcard__price">EUR 75,00</span>
+            </div>
+            <span className="pcard__meta">N°03 · Drosmīgs</span>
+          </Link>
+          <Link href="/produkts/jaunmala" className="pcard" data-reveal>
+            <div className="pcard__media">
+              <Image src="/img/white-roses-closeup.jpg" alt="" fill sizes="25vw" />
+            </div>
+            <div className="pcard__row">
+              <span className="pcard__name">Jaunmala <em>blanc</em></span>
+              <span className="pcard__price">EUR 55,00</span>
+            </div>
+            <span className="pcard__meta">N°04 · Tīrs</span>
+          </Link>
         </div>
       </section>
 
@@ -147,80 +197,81 @@ export default function HomePage() {
       <section className="deco">
         <div className="deco__top">
           <div>
-            <span className="deco__h__tag" data-reveal>04 — Dekori</span>
-            <h2 className="deco__h" data-reveal>No arkas līdz <em>pēdējam</em> galda lociņam.</h2>
+            <span className="deco__h__tag"><span>Pasākumu studija</span></span>
+            <h2 className="deco__h" data-reveal>
+              <em>Dekorēšana</em><br />kāzām un<br />īpašiem brīžiem.
+            </h2>
           </div>
           <p className="deco__lead" data-reveal>
-            Projektējam pilnus telpas un āra dekorus kāzām, korporatīvajiem pasākumiem un
-            privātām vakariņām. Sarunā vienojamies par redzējumu; studijā uzbūvējam katru detaļu.
+            No vienkārša ziedu pušķa centrā līdz pilnai zāles dekorēšanai — strādājam ar tavu vīziju, telpu un sajūtu. Konsultācijas ir bezmaksas.
+            <br /><br />
+            <Link href="/kontakti" className="meta" style={{ borderBottom: "1px solid currentColor", paddingBottom: 4, color: "var(--accent)" }}>Pierakstīties uz konsultāciju →</Link>
           </p>
         </div>
         <div className="deco__grid">
-          <div data-reveal><Image src="/img/outdoor-arches.jpg" alt="" fill sizes="60vw" /></div>
-          <div data-reveal><Image src="/img/table-eucalyptus.jpg" alt="" fill sizes="30vw" /></div>
-          <div data-reveal><Image src="/img/drapery-lights.jpg" alt="" fill sizes="30vw" /></div>
-          <div data-reveal><Image src="/img/venue-interior.jpg" alt="" fill sizes="30vw" /></div>
-          <div data-reveal><Image src="/img/chairs.jpg" alt="" fill sizes="30vw" /></div>
+          <div className="shot"><Image src="/img/drapery-lights.jpg" alt="" fill sizes="60vw" /></div>
+          <div className="shot"><Image src="/img/table-eucalyptus.jpg" alt="" fill sizes="30vw" /></div>
+          <div className="shot"><Image src="/img/white-arch.jpg" alt="" fill sizes="30vw" /></div>
+          <div className="shot"><Image src="/img/venue-interior.jpg" alt="" fill sizes="30vw" /></div>
+          <div className="shot"><Image src="/img/outdoor-arches.jpg" alt="" fill sizes="30vw" /></div>
         </div>
       </section>
 
       {/* PROCESS */}
       <section className="process">
         <header className="process__head">
-          <h2 data-reveal>No idejas līdz <em>piegādei</em></h2>
-          <p className="process__head__r" data-reveal>
-            Sešu soļu ceļš katram projektam — no pirmā kontakta līdz pēdējai pārbaudei.
-          </p>
+          <h2 data-reveal>No idejas<br />līdz <em>ziedam</em></h2>
+          <p className="process__head__r" data-reveal>Četri soļi, viena saruna, viens pušķis.</p>
         </header>
 
-        {[
-          ["01", "Saruna", "Pa telefonu vai studijā. Iepazīstam tavu dienu un sajūtu.", "20 min"],
-          ["02", "Skice", "Krāsu paletes, kompozīcijas references, materiāli, tāme.", "2–4 dienas"],
-          ["03", "Apstiprinājums", "Detalizēta vienošanās, datumi, loģistika.", "1 diena"],
-          ["04", "Pasūtījums", "Ziedi tiek atlasīti pie audzētājiem 5–7 dienas pirms.", "1 ned."],
-          ["05", "Veidošana", "Studijas dienā — viss top no rīta līdz pēcpusdienai.", "Diena X−1"],
-          ["06", "Piegāde", "Atvedam, uzstādām, paliekam līdz pēdējam pārbaudījumam.", "Diena X"],
-        ].map(([n, name, body, time]) => (
-          <div key={n} className="process__row" data-reveal>
-            <span className="process__step">{n}</span>
-            <h3 className="process__name">{name}</h3>
-            <p className="process__body">{body}</p>
-            <span className="process__time">{time}</span>
-          </div>
-        ))}
+        <div className="process__rows">
+          {[
+            ["i.", "Saruna", "Pastāsti, kam pušķis. Mēs jautājam pareizos jautājumus — krāsa, sajūta, vārds, kuru gribi pateikt.", "5 min"],
+            ["ii.", "Skice", "Pirms zieda mēs uzmetam paletes un kompozīcijas variantu, kas atbilst tavai vīzijai.", "Tajā dienā"],
+            ["iii.", "Ziedi", "Strādājam tikai ar svaigiem ziediem no pārbaudītiem audzētājiem. Katrs pušķis dzimst rokās, ne pēc šablona.", "2 – 4 h"],
+            ["iv.", "Piegāde", "Mēs piegādājam Jelgavā un Rīgā tajā pašā dienā, visā Latvijā — nākamajā darba dienā.", "Šodien"],
+          ].map(([n, name, body, time]) => (
+            <div key={n} className="process__row" data-reveal>
+              <span className="process__step">{n}</span>
+              <h3 className="process__name">{name}</h3>
+              <p className="process__body">{body}</p>
+              <span className="process__time">{time}</span>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* JOURNAL */}
       <section className="journal">
         <header className="journal__head">
-          <h2 data-reveal>Aiz <em>kadra</em></h2>
-          <Link href="#" className="journal__handle">@thegoldenrose</Link>
+          <h2 data-reveal>Iekšskats <em>—</em><br />no studijas.</h2>
+          <a href="https://instagram.com/thegoldenroseee" target="_blank" rel="noopener" className="journal__handle" data-reveal>@thegoldenroseee →</a>
         </header>
         <div className="journal__grid">
-          <Link href="#" className="j-shot j-1" data-reveal>
-            <Image src="/img/bride-tulips-ring.jpg" alt="" fill sizes="40vw" />
-            <span className="j-shot__cap">Tulpju aplis pavasarim</span>
-          </Link>
-          <Link href="#" className="j-shot j-2" data-reveal>
-            <Image src="/img/noir-roses.jpg" alt="" fill sizes="25vw" />
-            <span className="j-shot__cap">Noir rozes</span>
-          </Link>
-          <Link href="#" className="j-shot j-3" data-reveal>
+          <div className="j-shot j-1" data-reveal>
+            <Image src="/img/bride-peony.jpg" alt="" fill sizes="40vw" />
+            <span className="j-shot__cap">Līgavu pušķis · Maijs</span>
+          </div>
+          <div className="j-shot j-2" data-reveal>
+            <Image src="/img/xs-paka.jpg" alt="" fill sizes="25vw" />
+            <span className="j-shot__cap">Abonements XS · Aprīlis</span>
+          </div>
+          <div className="j-shot j-3" data-reveal>
             <Image src="/img/venue-drape.jpg" alt="" fill sizes="30vw" />
-            <span className="j-shot__cap">Telpas drapējums</span>
-          </Link>
-          <Link href="#" className="j-shot j-4" data-reveal>
-            <Image src="/img/white-roses-closeup.jpg" alt="" fill sizes="15vw" />
-            <span className="j-shot__cap">Baltās rozes</span>
-          </Link>
-          <Link href="#" className="j-shot j-5" data-reveal>
-            <Image src="/img/table-eucalyptus.jpg" alt="" fill sizes="25vw" />
-            <span className="j-shot__cap">Eikalipta galds</span>
-          </Link>
-          <Link href="#" className="j-shot j-6" data-reveal>
-            <Image src="/img/blue-hydrangea-box.jpg" alt="" fill sizes="25vw" />
-            <span className="j-shot__cap">Hortenzijas kastē</span>
-          </Link>
+            <span className="j-shot__cap">Kāzu dekors · Aprīlis</span>
+          </div>
+          <div className="j-shot j-4" data-reveal>
+            <Image src="/img/chairs.jpg" alt="" fill sizes="15vw" />
+            <span className="j-shot__cap">Krēsli · Marts</span>
+          </div>
+          <div className="j-shot j-5" data-reveal>
+            <Image src="/img/s-paka.jpg" alt="" fill sizes="25vw" />
+            <span className="j-shot__cap">Abonements S · Marts</span>
+          </div>
+          <div className="j-shot j-6" data-reveal>
+            <Image src="/img/noir-roses.jpg" alt="" fill sizes="25vw" />
+            <span className="j-shot__cap">Sēzonas redaktoram · Februāris</span>
+          </div>
         </div>
       </section>
     </>

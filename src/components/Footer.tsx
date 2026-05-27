@@ -23,10 +23,10 @@ export default function Footer() {
         <div>
           <h4>Studija</h4>
           <ul>
-            <li>Lielā iela 12, Jelgava</li>
-            <li>O–P 10–19 · S 10–16</li>
-            <li><a href="tel:+37120000000">+371 2X XXX XXX</a></li>
-            <li><a href="mailto:studio@thegoldenrose.lv">studio@thegoldenrose.lv</a></li>
+            <li>Rīgas iela 14, Jelgava</li>
+            <li>P–PT 9–20 · S 9–18 · Sv 11–16</li>
+            <li><a href="tel:+37127772200">+371 27 772 200</a></li>
+            <li><a href="mailto:studija@thegoldenrose.lv">studija@thegoldenrose.lv</a></li>
           </ul>
         </div>
 

@@ -54,7 +54,7 @@ export default function Nav() {
       </nav>
 
       <div className="nav__right">
-        <a className="nav__phone" href="tel:+37120000000">+371 2X XXX XXX</a>
+        <a className="nav__phone" href="tel:+37127772200">+371 27 772 200</a>
         <button
           type="button"
           className="nav__cart"
